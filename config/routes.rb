@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'events' => 'events#index'
   require 'sidekiq/web'
   mount Sidekiq::Web => '/sidekiq'
   # The priority is based upon order of creation: first created -> highest priority.

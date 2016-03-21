@@ -7,7 +7,7 @@ class PaymentWorker
   end
 
   def perform
-    puts "payment"
+    Event.create(event_type: "payment")
   end
 end
 

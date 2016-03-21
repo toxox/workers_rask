@@ -7,7 +7,7 @@ class CashoutWorker
   end
 
   def perform
-    puts "payment"
+    Event.create(event_type: "cashout")
   end
 end
 

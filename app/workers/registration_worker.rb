@@ -7,7 +7,7 @@ class RegistrationWorker
   end
 
   def perform
-    puts "registration"
+    Event.create(event_type: "registration")
   end
 end
 

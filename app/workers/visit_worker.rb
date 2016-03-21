@@ -7,7 +7,7 @@ class VisitWorker
   end
 
   def perform
-    puts "visit"
+    Event.create(event_type: "visit")
   end
 end
 
